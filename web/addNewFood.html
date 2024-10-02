@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div>เพิ่มเมนู</div>
+        <form action="AddNewFoodServlet">
+            ID <input type="text" name="id"><br/>
+            ชื่อ: <input type="text" name="foodName"><br/>
+            ประเภท:<label for="foodType"></label><br/>
+            <select id="foodType" name="foodType">
+            <option value="ข้าว">ข้าว</option>
+            <option value="ข้าว">เเกง</option>
+            <option value="ก๋วยเตี๋ยว">ก๋วยเตี๋ยว</option>
+            <option value="ของหวาน">ของหวาน</option>
+            </select><br/>
+            รสชาติ:<br/><input type="radio" id="notSpicy" name="taste" value="ไม่เผ็ด" required>
+            <label for="notSalty">ไม่เผ็ด</label>
+            <input type="radio" id="littleSpicy" name="taste" value="เผ็ดน้อย">
+            <label for="littleSalty">เผ็ดน้อย</label>
+            <input type="radio" id="verySpicy" name="taste" value="เผ็ดมาก">
+            <label for="verySalty">เผ็ดมาก</label><br/>
+            ราคา: <input type="text" name="foodPrice"><br/>
+            <input type="submit" value="เพิ่มอาหาร">
+        </form>
+    </body>
+</html>
